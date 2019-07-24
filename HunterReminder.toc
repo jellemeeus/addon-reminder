@@ -1,6 +1,6 @@
-## Interface: 70200
+## Interface: 80200
 ## Title: |cff40ff00Hunter Reminder|r
-## Author: Mayron
+## Author: MoskiMBA
 ## DefaultState: enabled
 ## SavedVariables: HunterReminderDB 
 
