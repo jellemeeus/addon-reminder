@@ -1,0 +1,9 @@
+## Interface: 70200
+## Title: |cff40ff00Hunter Reminder|r
+## Author: Mayron
+## DefaultState: enabled
+## SavedVariables: HunterReminderDB 
+
+config.lua
+timer.lua
+init.lua
