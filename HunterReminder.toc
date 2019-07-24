@@ -5,5 +5,5 @@
 ## SavedVariables: HunterReminderDB 
 
 config.lua
-timer.lua
+reminder.lua
 init.lua

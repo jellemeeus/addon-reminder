@@ -8,7 +8,7 @@ local Config = core.Config
 local UIConfig
 
 --------------------------------------
--- Defaults (usually a database!)
+-- Defaults 
 --------------------------------------
 local defaults = {
 	theme = {

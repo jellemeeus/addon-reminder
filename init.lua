@@ -1,5 +1,7 @@
 local _, core = ... -- Namespace
 
+local Reminder = core.Reminder;
+
 --------------------------------------
 -- Custom Slash Command
 --------------------------------------
@@ -8,7 +10,7 @@ core.commands = {
 	
 	["help"] = function()
 		core:Print("List of slash commands:")
-		core:Print("|cff40ff00/hr config|r - shows config menu [not yet implemented]")
+		core:Print("|cff40ff00/hr config|r - shows config menu []")
 		core:Print("|cff40ff00/hr help|r - shows help info")
 	end,
 }
@@ -80,6 +82,12 @@ function core:init(event, name)
 	
     core:Print("Welcome back", UnitName("player").."!")
 end
+
+-- Create frame that waits on rested state change
+local rested_event = CreateFrame("Frame")
+rested_event:RegisterEvent("PLAYER_UPDATE_RESTING")
+rested_event:SetScript("OnEvent", Reminder.remind)
+
 
 local events = CreateFrame("Frame")
 events:RegisterEvent("ADDON_LOADED")
