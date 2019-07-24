@@ -12,9 +12,9 @@ local UIConfig
 --------------------------------------
 local defaults = {
 	theme = {
-		r = 0, 
-		g = 0.8, -- 204/255
-		b = 1,
+		r = 0.25, 
+		g = 1, 
+		b = 0,
 		hex = "40ff00"
 	}
 }
@@ -45,7 +45,7 @@ end
 function Config:CreateMenu()
 	UIConfig = CreateFrame("Frame", "HunterReminderConfig", UIParent, "BasicFrameTemplateWithInset")
 	--UIConfig:SetSize(260, 360)
-	UIConfig:SetSize(200, 70)
+	UIConfig:SetSize(240, 70)
 	UIConfig:SetPoint("CENTER")
 
 	UIConfig.title = UIConfig:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
@@ -70,8 +70,8 @@ function Config:CreateMenu()
 	-- Check Button 1:
 	UIConfig.checkBtn1 = CreateFrame("CheckButton", nil, UIConfig, "UICheckButtonTemplate")
 	--UIConfig.checkBtn1:SetPoint("TOPLEFT", UIConfig.loadBtn, "BOTTOMLEFT", -10, -40)
-	UIConfig.checkBtn1:SetPoint("CENTER", UIConfig, "TOP", -70, -40)
-	UIConfig.checkBtn1.text:SetText("Remind me! Food ammo")
+	UIConfig.checkBtn1:SetPoint("CENTER", UIConfig, "TOP", -95, -45)
+	UIConfig.checkBtn1.text:SetText("Remind me to buy Food and Ammo!")
 	UIConfig.checkBtn1:SetChecked(true)
 
 	-- Check Button 2:

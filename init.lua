@@ -8,7 +8,7 @@ core.commands = {
 	
 	["help"] = function()
 		core:Print("List of slash commands:")
-		core:Print("|cff40ff00/hr config|r - shows config menu")
+		core:Print("|cff40ff00/hr config|r - shows config menu [not yet implemented]")
 		core:Print("|cff40ff00/hr help|r - shows help info")
 	end,
 }
