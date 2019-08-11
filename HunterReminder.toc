@@ -1,4 +1,4 @@
-## Interface: 80200
+## Interface: 11302
 ## Title: |cff40ff00Hunter Reminder|r
 ## Author: MoskiMBA
 ## DefaultState: enabled
